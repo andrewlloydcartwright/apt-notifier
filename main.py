@@ -3,7 +3,7 @@ import praw
 pr = praw.Reddit(user_agent='Birmingham apartment hunter notifier by /u/NotFlameRetardant')
 pr.login()
 keywords = ['apartment', 'apartments', 'hunting', 'looking for apartment', 'searching', 'rent', 'lease']
-sub = pr.get_subreddit('test')
+sub = pr.get_subreddit('birmingham')
 already_done = []
 
 while True:
@@ -19,5 +19,3 @@ while True:
             already_done.append(submission.id)
 
     time.sleep(300)
-    print 'Cycle complete'
-
