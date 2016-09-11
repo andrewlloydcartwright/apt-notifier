@@ -2,7 +2,7 @@ import time
 import praw
 pr = praw.Reddit(user_agent='Birmingham apartment hunter notifier by /u/NotFlameRetardant')
 pr.login()
-keywords = ['apartment', 'apartments', 'hunting', 'looking for apartment', 'searching', 'rent', 'lease']
+keywords = ['apartment', 'apartments', 'hunting', 'looking for apartment', 'searching', 'rent', 'lease', '2br', '1br', '3br', '4br', '1ba', '2ba', 'studio']
 sub = pr.get_subreddit('Birmingham')
 already_done = []
 
